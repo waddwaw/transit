@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_diancai"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_order_selector"
+            android:text="站站查询" />
+
+        <RadioButton
+            android:id="@+id/rb_lishidingdan"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_historical_selector"
+            android:text="线路查询" />
+
+        <RadioButton
+            android:id="@+id/rb_yidiancai"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_ordered_selector"
+            android:text="休息娱乐" />
+
+        <RadioButton
+            android:id="@+id/rb_qita"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_other_selector"
+            android:text="城市设置" />
+    </RadioGroup>
+
+</LinearLayout>
